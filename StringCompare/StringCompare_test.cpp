@@ -1,9 +1,10 @@
 #include "gmock/gmock.h"
 #include "StringCompare.cpp"
 
-TEST(tc, CheckString) {
+TEST(tc, CheckStringLengthScore) {
+    StringCompare sc;
 
-    EXPECT_EQ(1 ,1);
+    EXPECT_EQ(sc.getLengthScore("ASD","DSA"), 60);
 }
 
 int main() {

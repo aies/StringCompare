@@ -23,6 +23,9 @@ TEST_F(StringCMPFixture, CheckStringLengthScore4) {
     EXPECT_EQ(sc.getLengthScore("AA", "AAE"), 30);
 }
 
+TEST_F(StringCMPFixture, CheckStringLengthScore5) {
+    EXPECT_EQ(sc.getLengthScore("AA", "AAEBB"), 0);
+}
 int main() {
     ::testing::InitGoogleMock();
     return RUN_ALL_TESTS();
